@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 
-function App() {
+const Copyright = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Typography variant='body2' color='textSecondary' align='center'>
+      {'Created by '}
+      <Link color='inherit' href='https://github.com/mdmundo'>
+        Edmundo Paulino
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+};
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh'
+  },
+  main: {
+    marginTop: theme.spacing(8),
+    marginBottom: theme.spacing(2),
+    padding: theme.spacing(3, 2)
+  },
+  footer: {
+    padding: theme.spacing(3, 2),
+    marginTop: 'auto',
+    backgroundColor:
+      theme.palette.type === 'light'
+        ? theme.palette.grey[200]
+        : theme.palette.grey[800]
+  }
+}));
+
+export default function StickyFooter() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <CssBaseline />
+      <Container component='main' className={classes.main} maxWidth='xs'>
+        <Typography variant='h2' component='h1' gutterBottom>
+          Host fonts
+        </Typography>
+        <Typography variant='h5' component='h2' gutterBottom>
+          Your server can never be as fast as a large CDN. So a good rule of
+          thumb is this: If your site is on an extremely slow host, prefer using
+          a CDN for your web fonts, otherwise prefer using the Local mode.
+        </Typography>
+        <Typography variant='body1'>Think about it.</Typography>
+      </Container>
+      <footer className={classes.footer}>
+        <Container maxWidth='xs'>
+          <Copyright />
+        </Container>
+      </footer>
     </div>
   );
 }
-
-export default App;
