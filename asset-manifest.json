@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/own-fonts/static/css/main.20e63968.chunk.css",
+    "main.js": "/own-fonts/static/js/main.92719db9.chunk.js",
+    "main.js.map": "/own-fonts/static/js/main.92719db9.chunk.js.map",
+    "runtime-main.js": "/own-fonts/static/js/runtime-main.0e165136.js",
+    "runtime-main.js.map": "/own-fonts/static/js/runtime-main.0e165136.js.map",
+    "static/css/2.fa8dc0ff.chunk.css": "/own-fonts/static/css/2.fa8dc0ff.chunk.css",
+    "static/js/2.da1856d7.chunk.js": "/own-fonts/static/js/2.da1856d7.chunk.js",
+    "static/js/2.da1856d7.chunk.js.map": "/own-fonts/static/js/2.da1856d7.chunk.js.map",
+    "index.html": "/own-fonts/index.html",
+    "static/css/2.fa8dc0ff.chunk.css.map": "/own-fonts/static/css/2.fa8dc0ff.chunk.css.map",
+    "static/css/main.20e63968.chunk.css.map": "/own-fonts/static/css/main.20e63968.chunk.css.map",
+    "static/js/2.da1856d7.chunk.js.LICENSE.txt": "/own-fonts/static/js/2.da1856d7.chunk.js.LICENSE.txt",
+    "static/media/300.css": "/own-fonts/static/media/roboto-vietnamese-300-normal.54344cce.woff2",
+    "static/media/400.css": "/own-fonts/static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
+    "static/media/500.css": "/own-fonts/static/media/roboto-vietnamese-500-normal.a46e5fcd.woff2",
+    "static/media/700.css": "/own-fonts/static/media/roboto-vietnamese-700-normal.cfedd72c.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e165136.js",
+    "static/css/2.fa8dc0ff.chunk.css",
+    "static/js/2.da1856d7.chunk.js",
+    "static/css/main.20e63968.chunk.css",
+    "static/js/main.92719db9.chunk.js"
+  ]
+}
